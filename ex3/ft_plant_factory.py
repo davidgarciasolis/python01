@@ -18,8 +18,9 @@ class Plant:
         self.age_old += 1
 
     def show(self) -> None:
-        print(f"{self.name.capitalize()}: {self.height:.1f}cm, {self.age_old} days old")
-        
+        print(f"{self.name.capitalize()}"
+              f": {self.height:.1f}cm, {self.age_old} days old")
+
 
 def main():
     p1 = Plant("rosa", 25, 30)
@@ -32,8 +33,7 @@ def main():
     for plant in plants:
         print("Created: ", end="")
         plant.show()
-    
+
 
 if __name__ == "__main__":
     main()
-    
